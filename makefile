@@ -11,13 +11,13 @@ FLAGS = -C0
 deps = $(wildcard *.c)
 BINS = $(deps:%.c=%.o)
 
-all: ${BINS} <name>.exe
+all: ${BINS} dataShell.exe
 
 ${BINS}: ${deps}
 	@echo "\nGenerating binary objects"
 	${CC} -c $^
 
-<name>.exe: ${BINS}
+dataShell.exe: ${BINS}
 	@echo "\nGenerating executable"
 	${CC} $^ -o $@ ${LINKERS}
 	@echo "\n"

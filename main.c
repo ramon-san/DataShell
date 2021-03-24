@@ -2,11 +2,10 @@
 //  main.c
 //
 //
-//  Created by Ramón Orraca on DD/MM/AAAA.
+//  Created by Ramón Orraca on 16/03/2021.
 //
 
 #include "defMain.h"
-#include "defFunctions.h"
 
 int main(void){
 
